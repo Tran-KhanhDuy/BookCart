@@ -1,0 +1,78 @@
+﻿@model BookCart.Models.User
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Edit User</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="~/Home">Home</a></li>
+                    <li class="breadcrumb-item"><a href="~/User">User List</a></li>
+                    <li class="breadcrumb-item active">Edit User @Model.Fullname</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Edit User</h3>
+                    </div>
+
+                    <form asp-action="Edit" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label asp-for="Email"></label>
+                                <input type="email" asp-for="Email" class="form-control" placeholder="Enter email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password"></label>
+                                <input type="password" class="form-control" asp-for="Password" placeholder="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Fullname"></label>
+                                <input type="text" class="form-control" asp-for="Fullname" placeholder="Fullname">
+                                <span asp-validation-for="Fullname" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Phone"></label>
+                                <input type="text" class="form-control" asp-for="Phone" placeholder="Phone">
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="RoleId">Role</label>
+                                <select asp-for="RoleId" class="custom-select form-control-border">
+                                    @foreach (var item in ViewBag.Roles)
+                                    {
+                                        <option value="@item.Id" selected="@(item.Id == Model.RoleId ? "selected" : null)">
+                                            @item.Name
+                                        </option>
+                                    }
+                                </select>
+                                <span asp-validation-for="RoleId" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
