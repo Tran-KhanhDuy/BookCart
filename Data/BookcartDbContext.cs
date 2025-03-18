@@ -20,7 +20,5 @@ namespace BookCart.Data
 
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartDetail> CartsDetail { get; set; }
-
-
     }
 }

@@ -12,11 +12,17 @@ namespace BookCart.Models
 
         [Column(TypeName = "nvarchar(255)")]
         public string? FullName {  get; set; }
+        [Column(TypeName = "nvarchar(20)")]
 
         public string? Phone {  get; set; }
-        public string? Address { get; set; }
-        public DateTime Date { get; set; }
 
-        public List<CartDetail>? CartDetails { get; set; }
+        [Column(TypeName = "nvarchar(20)")]
+        public string? Address { get; set; }
+        [Column(TypeName = "Timestamp")]
+        public DateTime Date { get; set; }
+        [ForeignKey("UserId")]
+        public List<Cart>? Carts { get; set; }
+
+        
     }
 }

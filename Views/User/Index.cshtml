@@ -3,13 +3,11 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-@section Css {
+@section Css{
     <link rel="stylesheet" href="~/adminlte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="~/adminlte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/adminlte/datatables-responsive/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="~/adminlte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 }
-
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <div class="container-fluid">
@@ -20,11 +18,11 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="~/Home">Home</a></li>
-                    <li class="breadcrumb-item active">User List</li>
+                    <li class="breadcrumb-item active">DataTables</li>
                 </ol>
             </div>
         </div>
-    </div>
+    </div><!-- /.container-fluid -->
 </section>
 
 <!-- Main content -->
@@ -34,7 +32,11 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">User List</h3>
+                        <h3 class="card-title">DataTable with minimal features & hover style</h3>
+                        <a class="btn btn-primary btn-sm float-right"
+                        asp-action ="Create">
+                        <i class="fas fa-folder"></i>
+                        Create New</a>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -46,36 +48,56 @@
                                     <th>Email</th>
                                     <th>Name</th>
                                     <th>Role</th>
-                                    <th>Action</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model)
-                                {
-                                    <tr>
-                                        <td>@item.Id</td>
-                                        <td>@item.Phone</td>
-                                        <td>@item.Email</td>
-                                        <td>@item.Fullname</td>
-                                        <td>@item.Role</td>
-                                        <td>
-                                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Edit</a>
-                                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
-                                        </td>
+                                @foreach(var item in Model){
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>@item.Phone</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.Fullname</td>
+                                    <td>@item.Role!.Name</td
+                                    <td>
+                                       <a class="btn btn-info btn-sm" href="#">
+                                           asp-action="Edit"
+                                           asp-route-id="@item.Id">
+                                             <i class="fas fa-pencil-alt">
+                                              </i>
+                                                Edit
+                                      </a>
+                                    <form asp-action="Delete" asp-route-id="@item.Id" method="post">
+                                          <a class="btn btn-danger btn-sm" href="#">
+                                          <i class="fas fa-trash">
+                                         </i>
+                                         Delete
+                                        </a>
+                                    </form>
+                                    </td>>
                                     </tr>
                                 }
                             </tbody>
+                            <tfoot>
+
+                                    <th>Rendering engine</th>
+                                    <th>Browser</th>
+                                    <th>Platform(s)</th>
+                                    <th>Engine version</th>
+                                    <th>CSS grade</th>
+                                </tr>
+                            </tfoot>
                         </table>
                     </div>
                     <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
-            </div>
-        </div>
-    </div>
+                </div>
+           </div>
+</div>
 </section>
 
-@section Scripts {
+@section Scripts{
     <script src="~/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="~/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
     <script src="~/adminlte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
@@ -90,15 +112,15 @@
     <script src="~/adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
     <script>
         $(function () {
-            $('#tbl-user').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": true,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "responsive": true,
-            });
+          $('#tbl-user').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+          });
         });
     </script>
 }

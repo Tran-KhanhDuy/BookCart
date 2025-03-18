@@ -1,52 +1,48 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Blank Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Blank Page</title>
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="~/AdminLTE/plugins/fontawesome-free/css/all.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/AdminLTE/plugins/fontawesome-free/css/all.min.css">
 
-  @await RenderSectionAsync("Css",required: false)
-  <!-- Theme style -->
-  <link rel="stylesheet" href="~/AdminLTE/css/adminlte.min.css">
+    @await RenderSectionAsync("Css", required: false)
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/AdminLTE/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
-<!-- Site wrapper -->
-<div class="wrapper">
-  <!-- Navbar -->
-  <partial name = "_Header"/>
-  <!-- /.navbar -->
-  <partial name = "_sidebar"/>
-  <!-- Main Sidebar Container -->
-  
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-   @RenderBody()
-  </div>
-  <!-- /.content-wrapper -->
-  <partial name = "_footer"/>
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
-
-<!-- jQuery -->
-<script src="~/AdminLTE/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="~/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src=".~/AdminLTE/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="~/AdminLTE/js/demo.js"></script>
-    @await RenderSectionAsync("Css", required: false)
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Navbar -->
+        <partial name="_Header" />
+        <!-- /.navbar -->
+        <partial name="_sidebar" />
+        <!-- Main Sidebar Container -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+        <!-- /.content-wrapper -->
+        <partial name="_footer" />
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="~/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src=".~/AdminLTE/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/AdminLTE/js/demo.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-
