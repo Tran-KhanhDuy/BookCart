@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\FE\Controllers\" />
     <Folder Include="Areas\FE\Data\" />
     <Folder Include="Areas\FE\Models\" />
   </ItemGroup>
