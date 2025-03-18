@@ -17,16 +17,12 @@ namespace BookCart.Models
         public decimal Price { get; set; }
 
         public string? Image {  get; set; }
+        public bool? Features { get; set; }
 
         [ForeignKey("CategoryId")]
         public Category? Category { get; set; }
 
         [ForeignKey("AuthorId")]
         public Author? Author { get; set; }
-
-
-
-
-
     }
 }
