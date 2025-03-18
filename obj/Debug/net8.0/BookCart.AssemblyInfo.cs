@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookCart")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+736c2fd14b7de2b2a7b521e3d36532a0f0e06ccd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7f3ed88ca79fcee2ba0e502e7f4e7e1681493b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookCart")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookCart")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
