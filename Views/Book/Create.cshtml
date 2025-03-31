@@ -1,0 +1,75 @@
+﻿@model BookCart.Dto.BookCreateDto
+@{
+    ViewData["Title"] = "Create";
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Create User</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="~/Home">Home</a></li>
+                    <li class="breadcrumb-item"><a href="~/Book">Book List</a></li>
+                    <li class="breadcrumb-item active">Create Book</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Create New Book</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form asp-action="Create">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label asp-for="Title"></label>
+                                <input asp-for="Title" class="form-control" placeholder="Title"/>
+                                <span asp-validation-for="Title" class="text-alert"/>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Description"></label>
+                                <textarea class="form-control" asp-for="Description"></textarea>
+                                <span asp-validation-for="Description" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Price"></label>
+                                <input class="form-control" asp-for="Price" placeholder="0"/>
+                                <span asp-validation-for="Price" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="PriceDiscount"></label>
+                                <input class="form-control" asp-for="PriceDiscount" placeholder="0">
+                                <span asp-validation-for="PriceDiscount" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Image"></label>
+                                <input class="form-control" asp-for="Image"/>
+                                <span asp-validation-for="Image" />
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

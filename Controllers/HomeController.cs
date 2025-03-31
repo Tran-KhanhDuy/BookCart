@@ -1,6 +1,6 @@
+using System.Diagnostics;
 using BookCart.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace BookCart.Controllers
 {

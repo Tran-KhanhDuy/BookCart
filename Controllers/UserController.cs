@@ -8,49 +8,89 @@ namespace BookCart.Controllers
 {
     public class UserController : Controller
     {
-        readonly BookcartDbContext _ctx;
+        readonly BookCartDbContext _ctx;
 
-        public UserController(BookcartDbContext ctx)
+        public UserController(BookCartDbContext ctx)
         {
             _ctx = ctx;
         }
 
         public async Task<IActionResult> Index()
         {
-            var users = await _ctx.Users.ToListAsync();
-            return View();
+            var users = await _ctx
+                .Users
+                .Include(u => u.Role)
+                .ToListAsync();
+            return View(users);
         }
+
         async Task PopulateRoles()
         {
             var roles = await _ctx.Roles.ToListAsync();
-            ViewBag.Roles = roles;
+            var roleList = new SelectList(roles, "Id", "Name");
+            ViewBag.Roles = roleList;
         }
 
         public async Task<IActionResult> Create()
         {
-            var roles = await _ctx.Roles.ToListAsync();
-            SelectList rolelist = new SelectList(roles, "Id", "Name");
-            ViewBag.Roles = rolelist;
+            await PopulateRoles();
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Create(User user)
         {
             if (ModelState.IsValid)
             {
-                await _ctx.Users.AddAsync(user);
+                _ctx.Users.Add(user);
                 await _ctx.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
+
+            await PopulateRoles();
             return View(user);
         }
-        [Route("(id)")]
+
+        //[Route("{id}")]
         public async Task<IActionResult> Edit(int id)
         {
             await PopulateRoles();
-            var user = await _ctx.Users.SingleOrDefaultAsync(u => u.Id == id);
+            var user = await _ctx.Users
+                .SingleOrDefaultAsync(u=>u.Id==id);
             return View(user);
+        }
+
+        [HttpPost]
+        //[Route("{id}")]
+        public async Task<IActionResult> Edit(int id, User user)
+        {
+            if (ModelState.IsValid)
+            {
+                _ctx.Attach(user).State=EntityState.Modified;
+                await _ctx.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+
+            await PopulateRoles();
+            return View(user);
+        }
+
+        [HttpPost]
+        //[Route("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                User? user = await _ctx.Users
+                    .SingleOrDefaultAsync(u => u.Id == id);
+                if (user != null)
+                {
+                    _ctx.Users.Remove(user);
+                    await _ctx.SaveChangesAsync();
+                }
+            }
+
+            return RedirectToAction("Index");
         }
     }
 }
-

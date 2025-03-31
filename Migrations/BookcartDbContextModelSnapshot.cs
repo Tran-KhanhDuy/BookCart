@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BookCart.Migrations
 {
-    [DbContext(typeof(BookcartDbContext))]
+    [DbContext(typeof(BookCartDbContext))]
     partial class BookcartDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

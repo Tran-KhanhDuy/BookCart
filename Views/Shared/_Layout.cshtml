@@ -8,11 +8,14 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="~/AdminLTE/plugins/fontawesome-free/css/all.min.css">
-
+    <link rel="stylesheet" href="~/adminlte/plugins/fontawesome-free/css/all.min.css">
+    
     @await RenderSectionAsync("Css", required: false)
+
     <!-- Theme style -->
-    <link rel="stylesheet" href="~/AdminLTE/css/adminlte.min.css">
+    <link rel="stylesheet" href="~/adminlte/css/adminlte.min.css">
+
+    
 </head>
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
@@ -20,14 +23,16 @@
         <!-- Navbar -->
         <partial name="_Header" />
         <!-- /.navbar -->
-        <partial name="_sidebar" />
         <!-- Main Sidebar Container -->
+        <partial name="_Sidebar" />
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             @RenderBody()
         </div>
         <!-- /.content-wrapper -->
-        <partial name="_footer" />
+
+        <partial name="_Footer" />
+
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
@@ -36,13 +41,14 @@
     </div>
     <!-- ./wrapper -->
     <!-- jQuery -->
-    <script src="~/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <script src="~/adminlte/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="~/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
-    <script src=".~/AdminLTE/js/adminlte.min.js"></script>
+    <script src="~/adminlte/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="~/AdminLTE/js/demo.js"></script>
+    <script src="~/adminlte/js/demo.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
