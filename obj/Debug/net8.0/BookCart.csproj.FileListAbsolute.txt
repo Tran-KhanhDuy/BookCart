@@ -259,3 +259,10 @@ D:\BookCart\BookCart\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Com
 D:\BookCart\BookCart\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\BookCart\BookCart\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\BookCart\BookCart\obj\Debug\net8.0\BookCart.sourcelink.json
+D:\BookCart\BookCart\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\BookCart\BookCart\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\BookCart\BookCart\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\BookCart\BookCart\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\BookCart\BookCart\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\BookCart\BookCart\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+D:\BookCart\BookCart\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

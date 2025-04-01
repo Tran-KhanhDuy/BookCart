@@ -5,12 +5,19 @@
 
 @{
     var session = HttpContextAccessor.HttpContext!.Session;
+
     string? jsoncart = session.GetString(BookCart.Areas.fe.Controllers.HomeController.CARTKEY);
+
     List<CartDto>? cart = null;
+
     if (jsoncart != null)
+
     {
+
         cart = JsonConvert.DeserializeObject<List<CartDto>>(jsoncart);
+
     }
+
     decimal total = 0;
 }
 <!--mini cart-->
@@ -25,9 +32,13 @@
             </div>
         </div>
         @if (cart != null)
+
         {
+
             foreach (var item in cart)
+
             {
+
                 total = item.Quantity * item.Item!.Price!.Value;
 
                 <div class="cart_item">
@@ -43,6 +54,7 @@
                     </div>
                 </div>
             }
+
         }
     </div>
     <div class="mini_cart_table">

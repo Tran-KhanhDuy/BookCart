@@ -8221,12 +8221,488 @@
       "PackagePath": "staticwebassets\\AdminLTE\\plugins\\uplot\\uPlot.min.css"
     },
     {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\font.awesome.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font.awesome.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\simple-line-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\simple-line-icons.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slick.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\style",
+      "PackagePath": "staticwebassets\\assets\\css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css.map"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\style.map",
+      "PackagePath": "staticwebassets\\assets\\css\\style.map"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\vendor\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendor\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\css\\vendor\\vendor.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendor\\vendor.min.css"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\Simple-Line-Icons.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Simple-Line-Icons.eot"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\Simple-Line-Icons.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Simple-Line-Icons.svg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\Simple-Line-Icons.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Simple-Line-Icons.ttf"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\Simple-Line-Icons.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Simple-Line-Icons.woff"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\Simple-Line-Icons.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Simple-Line-Icons.woff2"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ionicons.eot"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ionicons.svg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\bg\\bg1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\bg1.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\bg\\bg2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\bg2.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\bg\\bg3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\bg3.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\bg\\bg4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\bg4.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\bg\\shop_bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\shop_bg.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blog1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog1.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blog2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog2.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blog3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog3.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blog4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog4.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blog5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog5.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blog6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog6.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blog7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog7.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blog8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog8.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blog9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog9.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\blogbig.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blogbig.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\comment2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment2.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\post-comment1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\post-comment1.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\post-comment2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\post-comment2.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\related1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\related1.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\blog\\related2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\related2.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.ico"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\icon\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\owl.video.play.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\logo\\Icon metro-list.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\Icon metro-list.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\logo\\Icon open-grid-three-up.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\Icon open-grid-three-up.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\others\\instagram1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\others\\instagram1.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\others\\instagram2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\others\\instagram2.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\others\\instagram3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\others\\instagram3.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\others\\instagram4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\others\\instagram4.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\others\\instagram5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\others\\instagram5.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\others\\instagram6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\others\\instagram6.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\others\\instagram7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\others\\instagram7.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\others\\instagram8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\others\\instagram8.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\paypal.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\paypal.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\big-product\\product1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\big-product\\product1.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\product1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product1.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\product2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product2.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\product2.jpg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product2.jpg.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\product3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product3.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\product4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product4.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\product5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product5.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\product6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product6.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\product7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product7.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\product8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product8.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\small-product\\product1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\small-product\\product1.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\small-product\\product2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\small-product\\product2.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\small-product\\product3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\small-product\\product3.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\product\\small-product\\product4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\small-product\\product4.png"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\img\\slider\\slider1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider1.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\images-loaded.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\images-loaded.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\jquery.instagramFeed.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.instagramFeed.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\jquery.nice-select.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.nice-select.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\jquery.scrollup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.scrollup.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\mailchimp-ajax.js",
+      "PackagePath": "staticwebassets\\assets\\js\\mailchimp-ajax.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\tippy-bundle.umd.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tippy-bundle.umd.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\vendor\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\vendor\\modernizr-3.7.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-3.7.1.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\vendor\\popper.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\popper.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\vendor\\vendor.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\vendor.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\_common.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_common.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\_variabls.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_variabls.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_banner.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_banner.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_blog-details.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_blog-details.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_blog.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_blog.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_cart-page.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_cart-page.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_checkout.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_checkout.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_footer.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_footer.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_header.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_header.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_other.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_other.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_product-details.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_product-details.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_product.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_product.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_quick-view.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_quick-view.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_shop.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_shop.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\section\\_slider.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\section\\_slider.scss"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\assets\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\style.scss"
+    },
+    {
       "Id": "D:\\BookCart\\BookCart\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\BookCart\\BookCart\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\images\\1.jpeg",
+      "PackagePath": "staticwebassets\\images\\1.jpeg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\images\\2.jpeg",
+      "PackagePath": "staticwebassets\\images\\2.jpeg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\3.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\images\\giodua.jpg",
+      "PackagePath": "staticwebassets\\images\\giodua.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\images\\hylap.jpg",
+      "PackagePath": "staticwebassets\\images\\hylap.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\images\\romeo.jpg",
+      "PackagePath": "staticwebassets\\images\\romeo.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\images\\tamquoc.jpg",
+      "PackagePath": "staticwebassets\\images\\tamquoc.jpg"
+    },
+    {
+      "Id": "D:\\BookCart\\BookCart\\wwwroot\\images\\tuma.jpg",
+      "PackagePath": "staticwebassets\\images\\tuma.jpg"
     },
     {
       "Id": "D:\\BookCart\\BookCart\\wwwroot\\js\\site.js",

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<BookcartDbContext>(o=>o. UseSqlServer(builder.Configuration.GetConnectionString("BookCartConnectionString")));
+builder.Services.AddDbContext<BookCartDbContext>(o=>o. UseSqlServer(builder.Configuration.GetConnectionString("BookCartConnectionString")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

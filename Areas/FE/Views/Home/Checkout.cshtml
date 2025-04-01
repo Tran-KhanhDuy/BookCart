@@ -1,4 +1,6 @@
-﻿@using BookCart.Dto
+﻿@model BookCart.Models.PaymentInformation
+
+@using BookCart.Dto
 @using Microsoft.AspNetCore.Http
 @using Newtonsoft.Json
 @inject IHttpContextAccessor HttpContextAccessor
@@ -6,13 +8,22 @@
 @{
     ViewData["Title"] = "Checkout";
 
+
+
     var session = HttpContextAccessor.HttpContext!.Session;
+
     string? jsoncart = session.GetString(BookCart.Areas.fe.Controllers.HomeController.CARTKEY);
+
     List<CartDto>? cart = null;
+
     if (jsoncart != null)
+
     {
+
         cart = JsonConvert.DeserializeObject<List<CartDto>>(jsoncart);
+
     }
+
     decimal total = 0;
 }
 
@@ -94,43 +105,44 @@
         <div class="checkout_form">
             <div class="row">
                 <div class="col-lg-7 col-md-6">
-                    <form action="#">
+                    <form action="/fe/Home/CreatePaymentUrl" method="post">
                         <h3>Billing Details</h3>
-                        <div class="checkout_form_input">
-                            <label for="country">country <span>*</span></label>
-                            <select class="select_option" name="cuntry" id="country">
-                                <option value="2">United Kingdom (UK)  </option>
-                                <option value="3">Algeria</option>
-                                <option value="4">Afghanistan</option>
-                                <option value="5">Ghana</option>
-                                <option value="6">Albania</option>
-                                <option value="7">Bahrain</option>
-                                <option value="8">Colombia</option>
-                                <option value="9">Dominican Republic</option>
-                            </select>
-                        </div>
+                        @* <div class="checkout_form_input"> *@
+                        @*     <label for="country">country <span>*</span></label> *@
+                        @*     <select class="select_option" name="cuntry" id="country"> *@
+                        @*         <option value="2">United Kingdom (UK)  </option> *@
+                        @*         <option value="3">Algeria</option> *@
+                        @*         <option value="4">Afghanistan</option> *@
+                        @*         <option value="5">Ghana</option> *@
+                        @*         <option value="6">Albania</option> *@
+                        @*         <option value="7">Bahrain</option> *@
+                        @*         <option value="8">Colombia</option> *@
+                        @*         <option value="9">Dominican Republic</option> *@
+                        @*     </select> *@
+                        @* </div> *@
+
                         <div class="checkout_form_input">
                             <label>First Name <span>*</span></label>
-                            <input type="text">
+                            <input asp-for="Fullname">
                         </div>
                         <div class="checkout_form_input">
                             <label>Last Name  <span>*</span></label>
-                            <input type="text">
+                            <input asp-for="Address">
                         </div>
                         <div class="checkout_form_input">
                             <label>Company Name</label>
-                            <input type="text">
+                            <input asp-for="Email">
                         </div>
                         <div class="checkout_form_input">
                             <label>Address  <span>*</span></label>
-                            <input type="text">
+                            <input asp-for="Phone">
                         </div>
                         <div class="checkout_form_input">
-                            <input type="text">
+                            <input asp-for="Fullname">
                         </div>
                         <div class="checkout_form_input">
                             <label>Town / City <span>*</span></label>
-                            <input type="text">
+                            <textarea asp-for="Description"></textarea>
                         </div>
                         <div class="checkout_form_input">
                             <label> Email Address   <span>*</span></label>
@@ -190,17 +202,22 @@
                                     </thead>
                                     <tbody>
                                         @if (cart != null)
+
                                         {
+
                                             foreach (var item in cart)
+
                                             {
-                                                total = item.Quantity * item.Item!.Price!.Value;
+
+                                                total = item.Quantity * ((int)item.Item!.Price!);
                                                 <tr>
                                                     <td> @item.Item.Title </td>
                                                     <td class="text-right"> @item.Item.Price  </td>
                                                 </tr>
                                             }
+
                                         }
-                                        
+                                        <input type="hiden" asp-for="Amount" value="@total">
                                     </tbody>
                                     <tfoot>
                                         <tr>
@@ -264,7 +281,7 @@
                                 </div>
                             </div>
                             <div class="place_order_btn">
-                                <a class="btn btn-primary" href="#">place order</a>
+                                <a type="submit" class="btn btn-primary" href="#">place order</a>
                             </div>
 
                         </form>

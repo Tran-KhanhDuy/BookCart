@@ -5,10 +5,10 @@ namespace BookCart.Models
 {
     public class Book
     {
+
         [Key]
         public int Id { get; set; }
         public string? Title { get; set; }
-        //[Column(TypeName = "text")]
         public string? Description { get; set; }
         [Column(TypeName = "money")]
         public decimal? Price { get; set; }

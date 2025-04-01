@@ -1,11 +1,14 @@
 ﻿using BookCart.Data;
 using BookCart.Dto;
 using BookCart.Models;
+using BookCart.Service;
 using Humanizer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using Newtonsoft.Json;
 
 namespace BookCart.Areas.fe.Controllers
@@ -17,15 +20,20 @@ namespace BookCart.Areas.fe.Controllers
         public const string CARTKEY = "cart";
 
         readonly BookCartDbContext _ctx;
+        readonly IPayPalService _payPalService;
 
-        public HomeController(BookCartDbContext ctx)
+
+        public HomeController(BookCartDbContext ctx, IPayPalService payPalService)
         {
             _ctx = ctx;
+            _payPalService = payPalService;
+
+
         }
 
         public async Task<IActionResult> Index()
         {
-            List<Book> featured = await _ctx.Books.Where(b=>b.Features != null && b.Features.Value).Take(2).ToListAsync();
+            List<Book> featured = await _ctx.Books.Where(b => b.Features != null && b.Features.Value).Take(2).ToListAsync();
             ViewBag.Featured = featured;
             List<Book> bestSelling = await _ctx.Books.Take(8).ToListAsync();
             List<Book> latest = await _ctx.Books.Take(8).ToListAsync();
@@ -48,14 +56,14 @@ namespace BookCart.Areas.fe.Controllers
             List<Book> books = await _ctx.Books.ToListAsync();
             var categories = await _ctx.Categories.ToListAsync();
             ViewBag.Categories = categories;
-            
+
 
             List<decimal> prices = books
                 .Select(b => b.Price!.Value)
                 .OrderBy(b => b)
                 .ToList();
             ViewBag.PriceMin = prices[0];
-            ViewBag.PriceMax = prices[prices.Count-1];
+            ViewBag.PriceMax = prices[prices.Count - 1];
 
             List<string> authors = books
                 .Select(b => b.Author!)
@@ -98,7 +106,7 @@ namespace BookCart.Areas.fe.Controllers
             return View(books);
         }
 
-        
+
 
         // Lấy cart từ Session (danh sách CartItem)
         List<CartDto>? GetCartItems()
@@ -231,6 +239,48 @@ namespace BookCart.Areas.fe.Controllers
         public IActionResult Checkout()
         {
             return View();
+        }
+        [HttpPost]
+        public async Task<IActionResultExecutor> CreatePaymentUrl(PaymentInformation model)
+        {
+            List<CartDto>? items = GetCartItems();
+            if (items != null)
+            {
+                List<CartDto> details = new List<CartDetail>();
+                foreach (var item in items)
+                {
+                    CartDetail cartDetail = new CartDetail
+                    {
+                        BookId = item.Item!.Id,
+                        Price = item.Item.Price,
+                        Quantity = item.Quantity,
+                    };
+
+                }
+                Cart cart = new Cart
+                {
+                    UserId = 1,
+                    FullName = model.Fullname,
+                    Address = model.Address,
+                    Phone = model.Phone,
+                    CartDetails = details,
+                };
+                _ctx.Carts.Add(cart);
+                await _ctx.SaveChangesAsync();
+
+                var url = await _payPalService.CreatePaymentUrl(model, HttpContext);
+
+                return RedirectToRoute("/fe/home/index");
+            }
+
+
+        }
+        public IActionResult IActionResult PaymentCallback()
+        {
+            var response = _payPalService.PaymentExecute(Request.Query);
+
+            return Json(response);
+
         }
     }
 }
